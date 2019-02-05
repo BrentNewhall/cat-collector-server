@@ -10,5 +10,5 @@ This game was written by [Brent P. Newhall](http://brentnewhall.com) as part of 
 
 | Day | Hours |
 | --- | ----- |
-| 2019-02-05 | 0:30 |
+| 2019-02-05 | 1:00 |
 
