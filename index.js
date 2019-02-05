@@ -22,6 +22,12 @@ io.on( "connection", (socket) => {
     players.push( socket );
 	const player = players.length;
     console.log( "Player " + players.length + " connected." );
+	for( let index = 0; index < cats.length; index++ ) {
+		socket.emit( "place cat", cats[index] );
+	}
+	socket.on( "collect", (cat) => {
+		console.log( "Player " + player + " collecting " + cat );
+	});
 	socket.on( 'disconnect', () => {
 		players = players.splice(player,1);
 		console.log( "Player " + player + " disconnected." );
